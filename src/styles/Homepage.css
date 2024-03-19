@@ -1,0 +1,505 @@
+/* /* Global styles */
+@font-face {
+  font-family: 'usuzi';
+  src: url('../font/usuzi.ttf') format('truetype'),
+       url('../font/Arkitech_Bold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'usuzi, sans-serif';
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header styles */
+  .hero-section {
+    background-color: #0c83c8;
+    color: #ffffff;
+    padding: 100px 0;
+    height: 90vh;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* About section styles */
+  .about-section {
+    padding: 50px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Services section styles */
+  .services-section {
+    padding: 50px 0;
+  }
+
+  .card-services{
+    transition: 0.5s scale;
+  }
+  
+  .card-services:hover{
+    scale: 1.02;
+  }
+
+  .services-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .services-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .services-section p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* Technology section styles */
+  .technology-section {
+    padding: 50px 0;
+  }
+  
+  .technology-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .technology-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .technology-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Clients section styles */
+  .clients-section {
+    padding: 50px 0;
+  }
+  
+  .clients-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .clients-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .clients-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Colleges section styles */
+  .colleges-section {
+    padding: 50px 0;
+  }
+  
+  .colleges-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .colleges-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .colleges-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer section styles */
+  .footer-section {
+    background-color: #fc7a46;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-section p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .contact-page {
+    padding: 50px 0;
+  }
+  
+  .contact-page h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-page p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .contact-page form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-page form label {
+    font-weight: bold;
+  }
+  
+  .contact-page form textarea {
+    resize: none;
+  }
+  .team-page {
+    padding: 50px 0;
+  }
+  
+  .team-page h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 18px;
+  }
+
+  /* .card-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-img:hover {
+    transform: scale(1.1);
+  }
+   */
+   .colleges-page-container {
+    padding: 100px 200px;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .college-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s scale;
+  }
+  
+  .college-card:hover{
+    scale: 1.08;
+  }
+
+  .college-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .college-name {
+    font-size: 0.9em
+  }
+  
+  @media screen and (max-width: 768px) {
+    .colleges-grid {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  }
+  
+
+   .technology-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .technology-card {
+    /* background-color: #f9f9f9; */
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s scale;
+  }
+
+  .technology-card:hover{
+    scale: 1.05;
+  }
+  
+  .technology-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .technology-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .technology-description {
+    font-size: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .technology-card {
+      width: calc(50% - 40px);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .technology-card {
+      width: calc(100% - 40px);
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .card {
+      flex-basis: 100%;
+    }
+  }
+
+  .clients-page-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .clients-section,
+  .colleges-section {
+    width: 45%;
+  }
+  
+  .clients-section h2,
+  .colleges-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .clients-grid,
+  .colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .client-box,
+  .college-box {
+    transition: 0.5s scale;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  
+  .client-box .logo {
+    margin-bottom: 10px;
+  }
+  
+  .client-box .logo img {
+    max-width: 100px;
+    max-height: 50px;
+  }
+  
+  .client-box .name,
+  .college-box .name {
+    font-size: 1.2rem;
+  }
+
+  .client-box:hover{
+    scale: 1.1;
+  }
+
+  .colleges-section {
+    width: 100%;
+    margin: 0 auto; /* Center the section horizontally */
+    text-align: center; /* Align content inside the section to center */
+    margin-bottom: 30px;
+  }
+  
+  .colleges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center the grid items horizontally */
+  }
+  
+  .contact-container{
+    background-color: #0c83c8;
+    padding: 10%;
+    border-radius: 30px;
+  }
+  
+    
+  @media only screen and (min-width: 1000px) {
+    .hero-section {
+      height: 60vh;
+      padding: 70px 0;
+    }
+  }
+ 
+  
+  @media only screen and (max-width: 1000px) {
+    .hero-section {
+      height: 50vh;
+      padding: 70px 0;
+    }
+  }
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .hero-section {
+      height: 50vh;
+      padding: 70px 0;
+    }
+  
+    .about-section,
+    .services-section,
+    .technology-section,
+    .clients-section,
+    .colleges-section {
+      padding: 30px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .hero-section h1 {
+      font-size: 28px;
+    }
+  
+    .hero-section p {
+      font-size: 16px;
+    }
+  
+    .about-section h2,
+    .services-section h2,
+    .technology-section h2,
+    .clients-section h2,
+    .colleges-section h2 {
+      font-size: 28px;
+    }
+  
+    .about-section p,
+    .services-section p,
+    .technology-section p,
+    .clients-section p,
+    .colleges-section p {
+      font-size: 16px;
+    }
+  
+    .about-section h3,
+    .services-section h3 {
+      font-size: 20px;
+    }
+  
+    .about-section ul li,
+    .services-section ul li,
+    .technology-section ul li,
+    .clients-section ul li,
+    .colleges-section ul li {
+      font-size: 16px;
+    }
+  }
+  
+
+ 
+
+  /* Footer Styles */
+
+.footer-section {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-section h5 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
